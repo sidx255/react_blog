@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <nav className='body-padding'>
       <div>
-        <h1>The Aritifact</h1>
+        <h1>The Artifact</h1>
         <p>
           <em>Culture & Art blog</em>
         </p>

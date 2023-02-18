@@ -12,9 +12,9 @@
     flex: none;
   }
   
-  /* .card > .vertical-spacer {
+  .card > .vertical-spacer {
     flex: 1;
-  } */
+  }
   
   /* .card-img {
     width: 320px;
