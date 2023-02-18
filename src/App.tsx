@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-// import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
         <Header />
       </header>
        
-      {/* <HomePage /> */}
+      <HomePage />
       <footer>
         <Footer />
       </footer> 
