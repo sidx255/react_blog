@@ -1,5 +1,5 @@
 import React from 'react';
-import Clap from '../Clap';
+import ClapBtn from '../Clap';
 
 import './Card.css';
 
@@ -31,12 +31,12 @@ export default function Card({
       <hr className='card-margin' />
       <div className='card-padding card-actions'>
         <div className='card-actions'>
-          <Clap iconPath='/assets/icons/clapping.svg' />
+          <ClapBtn iconPath='/assets/icons/clapping.svg' />
           <span>{claps}</span>
         </div>
 
         <div className='card-actions'>
-          <Clap
+          <ClapBtn data-testid='heart'
             iconPath={heartSrc}
             onClick={(e: React.MouseEvent) => {
               console.log(e);
