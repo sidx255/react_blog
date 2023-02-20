@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../../components/Card';
 import mockData from '../../constants/mockData.json';
-import imgPath from '../../assets/images/*.png';
 
 import './HomePage.css';
 
