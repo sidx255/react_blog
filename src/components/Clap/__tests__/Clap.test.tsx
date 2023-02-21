@@ -9,6 +9,7 @@ describe('Clap', () => {
   it('should render clap', () => {
     // should render clap
     const data = mockData[0];
+    console.log(' ');
     const { container } = render(<ClapBtn {...data} />);
     expect(container.getElementsByClassName('card-actions-icon').length).toBe(1);
   });
