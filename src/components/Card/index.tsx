@@ -1,12 +1,13 @@
 import React from 'react';
 import ClapBtn from '../Clap';
+import { getFormattedDateFromUtcDate } from '../../utils/utcDate';
 
 import './Card.css';
 
 export default function Card({
-  image, date, readingTime, title, claps, liked, description, imgAlt = '',
+  image, date, reading_time, title, claps, liked, description, imgAlt = '',
 }: {
-  image: string; date: string; readingTime: string; 
+  image: string; date: string; reading_time: string; 
   imgAlt?: string; title: string; claps: number; liked: boolean; 
   description: string;
 }) {
@@ -20,8 +21,8 @@ export default function Card({
     <div className='card'>
       <img src={image} alt={imgAlt} className='card-img' />
       <p className='card-meta-info card-padding'>
-        <span>{readingTime}</span>
-        <span>{date}</span>
+        <span>{reading_time}</span>
+        <span>{getFormattedDateFromUtcDate(date)}</span>
       </p>
       <h3 className='card-title card-padding'>{title}</h3>
       <p className='card-content card-padding'>{description}</p>
