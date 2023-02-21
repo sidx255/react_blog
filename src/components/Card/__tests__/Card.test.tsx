@@ -9,6 +9,7 @@ describe('Card', () => {
   it('should render card', () => {
     // should render card
     const data = mockData[0];
+    console.log(' ');
     const { container } = render(<Card {...data} />);
     expect(container.getElementsByClassName('card').length).toBe(1);
   });
