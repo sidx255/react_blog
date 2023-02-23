@@ -14,6 +14,7 @@ describe('Card', () => {
     expect(container.getElementsByClassName('card').length).toBe(1);
   });
 
+
   // const { container } = render(<Card {...data}/>);
   // const component = render(<Card {...data}/>);
   // console.log(component);

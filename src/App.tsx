@@ -3,6 +3,8 @@ import React from 'react';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import Header from './components/Header';
+
+import { BlogPostProvider } from './contexts/BlogPostContext';
 import './App.css';
 
 function App() {
@@ -11,8 +13,10 @@ function App() {
       <header>
         <Header />
       </header>
-       
-      <HomePage />
+      <BlogPostProvider>
+        <HomePage />
+      </BlogPostProvider>
+      
       <footer>
         <Footer />
       </footer> 

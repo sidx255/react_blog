@@ -5,9 +5,9 @@ import { getFormattedDateFromUtcDate } from '../../utils/utcDate';
 import './Card.css';
 
 export default function Card({
-  image, date, reading_time, title, claps, liked, description, imgAlt = '',
+  image, date, readingTime, title, claps, liked, description, imgAlt = '',
 }: {
-  image: string; date: string; reading_time: string; 
+  image: string; date: string; readingTime: string; 
   imgAlt?: string; title: string; claps: number; liked: boolean; 
   description: string;
 }) {
@@ -21,7 +21,7 @@ export default function Card({
     <div className='card'>
       <img src={image} alt={imgAlt} className='card-img' />
       <p className='card-meta-info card-padding'>
-        <span>{reading_time}</span>
+        <span>{readingTime}</span>
         <span>{getFormattedDateFromUtcDate(date)}</span>
       </p>
       <h3 className='card-title card-padding'>{title}</h3>
